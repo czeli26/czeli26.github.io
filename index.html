@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Zelinske</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome! I'm glad you're here.</h1>
+        <!-- <button class="hamburger">☰</button> // FIXME dealing with this later -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <center><img src="portfoliopic.svg" alt="A photo of myself" style="max-width: 25%; height: auto;"></center>
+        <h2>About Me</h2>
+        <p>Hi, I'm Crystal, an aspiring software engineer with a passion for AI, 
+            problem-solving, and creative technologies. I'm a computer science student at 
+            the <a href="https://www.uic.edu/" target="_blank">University of Illinois at Chicago</a>, 
+            with plans to graduate in December 2026.
+            I am a member of UIC's <a href="https://honors.uic.edu/" target="_blank">Honors College</a>, 
+            and a volunteer for UIC's <a href="https://littlesparks.uic.edu/" target="_blank">Little Sparks
+                Program</a>, which serves as a resource for parenting students attending UIC.</p>
+        <p>When I'm not focusing on school, I love spending time with my family and friends.
+            I also have way too many hobbies, including crochet, sewing, pottery painting, or
+            really anything that allows me to be creative. I love trying new things and
+            getting out of my comfort zone. For most of my life, I would not have considered
+            myself a lover of the outdoors, but I moved to Colorado for about a year and a
+            half and found a love for mountains and hiking. I also enjoy traveling. Some of
+            my most memorable trips were when I hiked the 
+            <a href="https://www.highland.gov.uk/greatglenway/" target="_blank">Great Glen Way</a> in 
+            Scotland with my grandma, and when I took a solo road trip around the eastern half of the US.
+        </p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>I mainly program in C++, but I'm also familiar with C, HTML, and CSS. This semester 
+            I am focused on refining my skills in algorithms, data structures, and debugging. I've spent 
+            a lot of time deepening my understanding of programming logic. I keep myself 
+            busy, usually working on at least two programming projects at a time. My goal is 
+            to never stop progressing.</p>   
+        <p>Feel free to check out my <a href="https://github.com/czeli26" target="_blank">GitHub</a> 
+            and <a href="https://leetcode.com/u/czeli/" target="_blank">LeetCode</a> profiles!</p>
+        <!-- List skills here -->
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Check back soon for a look at some of my favorite projects!</p>
+        <!-- Add project cards here -->
+    </section>
+    
+    <section id="contact">
+        <h2>Lets Connect!</h2>
+        <br>
+        <center><a href="https://github.com/czeli26" target="_blank">
+            <img src="github.svg" alt="GitHub Logo" style="max-width: 30%; height: auto;">
+        </a>
+            <a href="https://leetcode.com/u/czeli/" target="_blank">
+            <img src="leetcode.svg" alt="Leetcode Logo" style="max-width: 30%; height: auto;">
+        </a>
+        <a href="https://www.linkedin.com/in/czeli/" target="_blank">
+            <img src="linkedin.svg" alt="LinkedIn Logo" style="max-width: 30%; height: auto;">
+        </a>
+        </center>
+        <p><center>Check out my socials or fill out the form below:</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button></center>
+        </form>
+    </section>
+    
+    <footer>
+        <p><center>&copy; 2025 Crystal Zelinske. All rights reserved.</center></p>
+    </footer>
+</body>
+</html>

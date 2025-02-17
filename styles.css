@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1ebe6;
+    color: #442a1e;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header & Navigation */
+header {
+    background: #7b5440;
+    color: white;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color:#d2786a;
+    text-decoration: none; /* Removes underline */
+}
+
+/* Mobile Menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    cursor: pointer;
+    transform: translateY(-50%); /* Centers it vertically */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+@media (max-width: 548px) {
+    .hamburger {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #442a1e;
+        position: fixed; /*absolute*/
+        height: calc(100vh - 130px); /* full screen */
+        top: 130px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        /* justify-content: center; /* centers menu items */
+        padding: 40px 0;
+        z-index: 999; /*full screen adjust*/
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 20px 0; /*full screen adjust*/
+    }
+}
+
+/* Links */
+a {
+    color: #d2786a; /* Change to your preferred color */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    color: #7b5440; /* Darker shade for hover effect */
+    text-decoration: underline; /* Optional: adds underline on hover */
+    transition: color 0.2s ease-in-out;
+}
+
+
+/* Contact Form */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact-form {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form label {
+    align-self: flex-start;
+    margin-top: 10px;
+    align-self: center; /* Centers labels horizontally */
+    text-align: center; /* Ensures text inside the label is centered */
+    width: 100%; /* Makes labels take up the full width of the form */
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #442a1e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 100%;
+}
+
+#contact-form button:hover {
+    background: #7b5440;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Footer */
+footer {
+    color:#d2786a;
+}
